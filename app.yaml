@@ -13,4 +13,7 @@
 #
 # [START runtime]
 runtime: nodejs8
+env_variables:
+  DF_PROJECT_ID: 'assistanttest7'
+  DF_SERVICE_ACCOUNT_PATH: './assistanttest7-c300c3f424f7.json'
 # [END runtime]
