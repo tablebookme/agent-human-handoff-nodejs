@@ -21,7 +21,7 @@ const CustomerStore = require('./customerStore.js');
 const MessageRouter = require('./messageRouter.js');
 
 // Grab the service account credentials path from an environment variable
-const keyPath = process.env.DF_SERVICE_ACCOUNT_PATH;
+const keyPath = './assistanttest7-c407deabd89d.json';
 if(!keyPath) {
   console.log('You need to specify a path to a service account keypair in environment variable DF_SERVICE_ACCOUNT_PATH. See README.md for details.');
   process.exit(1);
@@ -34,7 +34,7 @@ const dialogflowClient = new SessionsClient({
 })
 
 // Grab the Dialogflow project ID from an environment variable
-const projectId = process.env.DF_PROJECT_ID;
+const projectId = 'assistanttest7';
 if(!projectId) {
   console.log('You need to specify a project ID in the environment variable DF_PROJECT_ID. See README.md for details.');
   process.exit(1);
